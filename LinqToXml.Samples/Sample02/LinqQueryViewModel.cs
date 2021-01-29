@@ -156,12 +156,12 @@ namespace LinqToXml.Samples.Sample02
           join o in docSales.Elements("SalesOrderHeader")
                     on (string)c.Element("CustomerID") equals
                       (string)o.Element("CustomerID")
-          where c.Element("CustomerID").Value == "609"
+          where c.Element("CustomerID").Value == "340"
           select new XElement("Order",
-              new XElement("CustomerID", (string)c.Element("CustomerID")),
+              //new XElement("CustomerID", (string)c.Element("CustomerID")),
               new XElement("CompanyName", (string)c.Element("CompanyName")),
-              new XElement("FirstName", (string)c.Element("FirstName")),
-              new XElement("LastName", (string)c.Element("LastName")),
+              new XElement("Chato", (string)c.Element("FirstName")),
+              //new XElement("LastName", (string)c.Element("LastName")),
               new XElement("OrderDate", (DateTime)o.Element("OrderDate")),
               new XElement("SalesOrderNumber", (string)o.Element("SalesOrderNumber"))
           )
