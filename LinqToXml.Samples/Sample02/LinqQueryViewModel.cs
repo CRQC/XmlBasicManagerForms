@@ -226,8 +226,8 @@ namespace LinqToXml.Samples.Sample02
       foreach (Customer cust in customers) {
         sb.AppendLine("Company Name: " + cust.CompanyName);
         sb.AppendLine("   Name: " + cust.LastName + ", " + cust.FirstName);
-        sb.AppendLine("   SalesPerson: " + cust.SalesPerson);
         sb.AppendLine("   EmailAddres: " + cust.EmailAddress);
+        sb.AppendLine("   SalesPerson: " + cust.SalesPerson);
         sb.AppendLine("   Phone: " + cust.Phone);
       }
 

@@ -54,10 +54,13 @@ namespace LinqToXml.Samples.Sample03
 
       ResultText = value.ToString("c");
     }
-    #endregion
+        #endregion
 
-    #region Average Method
-    public void Average()
+        #region Average Method
+        /// <summary>
+        /// Calculate average.
+        /// </summary>
+        public void Average()
     {
       XElement doc = XElement.Load(AppSettings.Instance.SalesOrderDetailsFile);
 
